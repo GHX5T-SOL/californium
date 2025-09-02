@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Digital Californium ($CALI) — the rarest meme on Solana. A playful, pixel-art website inspired by the world's most valuable element." />
+    <title>Digital Californium ($CALI) — The Rarest Meme on Solana</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Sky: sun + clouds + foreground hero -->
+    <div class="sky" aria-hidden="false">
+      <img src="./Sun.svg" alt="Sun" class="sun" />
+      <div class="clouds" aria-hidden="true">
+        <img src="./cloud_2.svg" alt="Cloud" class="cloud cloud-1" />
+        <img src="./cloud_2.svg" alt="Cloud" class="cloud cloud-2" />
+        <img src="./cloud_2.svg" alt="Cloud" class="cloud cloud-3" />
+      </div>
+
+      <header class="hero" role="banner">
+        <img src="./Hero_Image.svg" alt="Digital Californium — $CALI" class="hero-image" />
+      </header>
+    </div>
+
+    <!-- Ground divider: grass-topped tile strip -->
+    <div class="ground-top" aria-hidden="true"></div>
+
+    <!-- Content: earthy, tiled background -->
+    <main class="content" role="main">
+      <section class="intro">
+        <h1>Digital Californium ($CALI)</h1>
+        <p class="tagline">The rarest meme on Solana — forged from the spirit of Californium, the most valuable element known.</p>
+        <p class="copy">
+          Mined in the memes, minted on-chain. <strong>$CALI</strong> brings a playful, pixel-perfect world to Solana — a community-first token inspired by
+          <a href="https://en.wikipedia.org/wiki/Californium" target="_blank" rel="noopener">Californium</a>, famed for its rarity and power. Join the dig, claim your block, and help build the funniest frontier in crypto.
+        </p>
+        <div class="cta-buttons">
+          <a class="btn primary" href="#" target="_blank" rel="noopener" aria-label="Open Pump Fun launch page">Pump.Fun</a>
+          <a class="btn" href="#" target="_blank" rel="noopener" aria-label="View $CALI chart on DexScreener">DexScreener Chart</a>
+          <a class="btn" href="#" target="_blank" rel="noopener" aria-label="Join the $CALI Telegram group">Telegram Group</a>
+          <a class="btn" href="#" target="_blank" rel="noopener" aria-label="Visit the $CALI X (Twitter) page">X (Twitter) Page</a>
+          <a class="btn" href="#" target="_blank" rel="noopener" aria-label="Visit the $CALI X (Twitter) Community">X (Twitter) Community</a>
+        </div>
+
+        <div class="contract">
+          <label for="contractAddress">Contract Address</label>
+          <div class="contract-row">
+            <input id="contractAddress" type="text" value="PLACEHOLDER" readonly aria-readonly="true" aria-label="Contract address" />
+            <button id="copyBtn" class="btn copy" type="button" aria-live="polite">Copy</button>
+          </div>
+          <small class="hint">Replace with the live address after launch. Tap copy to share.</small>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="feature-card">
+          <h3>Pixel-Perfect Vibes</h3>
+          <p>Minecraft-inspired art, playful motion, and a sunny on-chain mood.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Community-Mined</h3>
+          <p>Built by the squad. Share memes, raid, and stack blocks together.</p>
+        </div>
+        <div class="feature-card">
+          <h3>On-Chain Shine</h3>
+          <p>Born on Solana for speed, fun, and near-zero fees.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <p>© <span id="year"></span> Digital Californium — $CALI. Made with memes, sunshine, and Solana.</p>
+    </footer>
+
+    <script src="./js/scripts.js"></script>
+  </body>
+  </html>
+
+
