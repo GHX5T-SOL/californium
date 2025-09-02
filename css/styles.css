@@ -105,6 +105,20 @@ body {
   50% { transform: translateY(-10px); }
 }
 
+.scroll-down-text {
+  margin-top: 10px;
+  text-align: center;
+  color: #1b150f;
+  opacity: 0.9;
+  font-size: clamp(10px, 2.4vw, 14px);
+  animation: nudge 2.8s ease-in-out infinite;
+}
+
+@keyframes nudge {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(4px); }
+}
+
 /* Ground */
 .ground-top {
   width: 100%;
