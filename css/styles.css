@@ -47,6 +47,32 @@ body {
 .cloud-2 { top: 35%; left: -45%; animation: moveClouds 75s linear infinite; transform: scale(1.15); }
 .cloud-3 { top: 10%; left: -55%; animation: moveClouds 90s linear infinite; transform: scale(0.9); }
 
+/* Clouds that start visible near the center and drift outwards */
+.cloud-mid-1,
+.cloud-mid-2,
+.cloud-mid-3,
+.cloud-mid-4 { animation-fill-mode: forwards; }
+
+/* Start around center-left and move left off-screen */
+.cloud-mid-1 { top: 28%; left: 38%; animation: driftLeft 38s linear infinite; }
+.cloud-mid-2 { top: 48%; left: 46%; animation: driftLeft 46s linear infinite; transform: scale(0.9); }
+
+/* Start around center-right and move right off-screen */
+.cloud-mid-3 { top: 22%; left: 56%; animation: driftRight 42s linear infinite; transform: scale(1.1); }
+.cloud-mid-4 { top: 40%; left: 62%; animation: driftRight 50s linear infinite; }
+
+@keyframes driftLeft {
+  0% { transform: translateX(0); opacity: 1; }
+  80% { opacity: 1; }
+  100% { transform: translateX(-120vw); opacity: 0.95; }
+}
+
+@keyframes driftRight {
+  0% { transform: translateX(0); opacity: 1; }
+  80% { opacity: 1; }
+  100% { transform: translateX(120vw); opacity: 0.95; }
+}
+
 @keyframes moveClouds {
   0% { transform: translateX(0); }
   100% { transform: translateX(180%); }
